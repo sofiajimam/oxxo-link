@@ -11,10 +11,10 @@ struct ContentView: View {
     @State private var selectedIndex: Int = 0
     var body: some View {
         TabView(selection: $selectedIndex){
-            ProfileView().tabItem {
+            BoardView().tabItem {
                 Label("", systemImage: "doc.richtext").foregroundStyle(.orange)
                 }
-            ProfileView().tabItem {
+            MapView().tabItem {
                 Label("", systemImage: "map").foregroundStyle(.orange)
                 }
             

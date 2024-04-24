@@ -28,21 +28,21 @@ struct ProfileView: View {
                         Text("Medallas").foregroundStyle(Color(red: 0.95, green: 0.60, blue: 0))
                         Spacer().frame(height: 30)
                         Rectangle().frame(height: 2).foregroundStyle(Color(red: 0.95, green: 0.60, blue: 0))
-                    }.frame(width: 100, height: 100)
+                    }.frame(width: 100, height: 100).offset(x:0, y:6)
                     Spacer()
                     VStack {
                         Spacer()
                         Text("Misiones").foregroundStyle(Color.gray)
                         Spacer().frame(height: 30)
                         Rectangle().frame(height: 2).foregroundStyle(Color.white)
-                    }.frame(width: 100, height: 100)
+                    }.frame(width: 100, height: 100).offset(x:0, y:6)
                     Spacer()
                     VStack {
                         Spacer()
                         Text("Eventos").foregroundStyle(Color.gray)
                         Spacer().frame(height: 30)
                         Rectangle().frame(height: 2).foregroundStyle(Color.white)
-                    }.frame(width: 100, height: 100)
+                    }.frame(width: 100, height: 100).offset(x:0, y:6)
                     Spacer()
                 }
                 

@@ -10,9 +10,14 @@
 		448C5FA92BD8B967002E02E2 /* LeclercApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448C5FA82BD8B967002E02E2 /* LeclercApp.swift */; };
 		448C5FAD2BD8B96A002E02E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448C5FAC2BD8B96A002E02E2 /* Assets.xcassets */; };
 		448C5FB02BD8B96A002E02E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448C5FAF2BD8B96A002E02E2 /* Preview Assets.xcassets */; };
+		50BC9C4B2BD933FE00C54C1E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BC9C4A2BD933FE00C54C1E /* ProfileView.swift */; };
+		50BC9C4F2BD9393300C54C1E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BC9C4E2BD9393300C54C1E /* MapView.swift */; };
+		50BC9C512BD9395100C54C1E /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BC9C502BD9395100C54C1E /* BoardView.swift */; };
+		50BC9C532BD939A300C54C1E /* BadgesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BC9C522BD939A300C54C1E /* BadgesView.swift */; };
+		50BC9C552BD939C200C54C1E /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BC9C542BD939C200C54C1E /* MissionView.swift */; };
+		50BC9C572BD939FD00C54C1E /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BC9C562BD939FD00C54C1E /* EventsView.swift */; };
 		83A9EDD42BD92A3D00154034 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 83A9EDD32BD92A3D00154034 /* Contents.json */; };
 		83A9EDDA2BD92AA100154034 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A9EDD92BD92AA100154034 /* ContentView.swift */; };
-		83A9EDDE2BD92B1200154034 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A9EDDD2BD92B1200154034 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,9 +25,14 @@
 		448C5FA82BD8B967002E02E2 /* LeclercApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeclercApp.swift; sourceTree = "<group>"; };
 		448C5FAC2BD8B96A002E02E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		448C5FAF2BD8B96A002E02E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		50BC9C4A2BD933FE00C54C1E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		50BC9C4E2BD9393300C54C1E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		50BC9C502BD9395100C54C1E /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		50BC9C522BD939A300C54C1E /* BadgesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgesView.swift; sourceTree = "<group>"; };
+		50BC9C542BD939C200C54C1E /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
+		50BC9C562BD939FD00C54C1E /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
 		83A9EDD32BD92A3D00154034 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Contents.json; path = "Preview Assets.xcassets/Contents.json"; sourceTree = "<group>"; };
 		83A9EDD92BD92AA100154034 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		83A9EDDD2BD92B1200154034 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = "../../../../../../.Trash/Repo-Reto1-Equipo05/Views/ProfileView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +65,8 @@
 		448C5FA72BD8B967002E02E2 /* Leclerc */ = {
 			isa = PBXGroup;
 			children = (
+				50BC9C4C2BD935F600C54C1E /* View */,
 				83A9EDD92BD92AA100154034 /* ContentView.swift */,
-				83A9EDDD2BD92B1200154034 /* ProfileView.swift */,
 				448C5FA82BD8B967002E02E2 /* LeclercApp.swift */,
 				448C5FAC2BD8B96A002E02E2 /* Assets.xcassets */,
 				448C5FAE2BD8B96A002E02E2 /* Preview Content */,
@@ -71,6 +81,27 @@
 				448C5FAF2BD8B96A002E02E2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		50BC9C4C2BD935F600C54C1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				50BC9C4D2BD9364A00C54C1E /* ProfileViews */,
+				50BC9C4A2BD933FE00C54C1E /* ProfileView.swift */,
+				50BC9C502BD9395100C54C1E /* BoardView.swift */,
+				50BC9C4E2BD9393300C54C1E /* MapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		50BC9C4D2BD9364A00C54C1E /* ProfileViews */ = {
+			isa = PBXGroup;
+			children = (
+				50BC9C522BD939A300C54C1E /* BadgesView.swift */,
+				50BC9C542BD939C200C54C1E /* MissionView.swift */,
+				50BC9C562BD939FD00C54C1E /* EventsView.swift */,
+			);
+			path = ProfileViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,8 +175,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50BC9C552BD939C200C54C1E /* MissionView.swift in Sources */,
 				83A9EDDA2BD92AA100154034 /* ContentView.swift in Sources */,
-				83A9EDDE2BD92B1200154034 /* ProfileView.swift in Sources */,
+				50BC9C4F2BD9393300C54C1E /* MapView.swift in Sources */,
+				50BC9C572BD939FD00C54C1E /* EventsView.swift in Sources */,
+				50BC9C512BD9395100C54C1E /* BoardView.swift in Sources */,
+				50BC9C4B2BD933FE00C54C1E /* ProfileView.swift in Sources */,
+				50BC9C532BD939A300C54C1E /* BadgesView.swift in Sources */,
 				448C5FA92BD8B967002E02E2 /* LeclercApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

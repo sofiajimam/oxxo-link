@@ -43,7 +43,7 @@ struct ProfileView: View {
                         .stroke(Color.gray, lineWidth: 0.50))
                 HStack(){
                     ZStack{
-                        HStack{
+                        HStack(spacing:30){
                             ForEach((TabbedItems.allCases), id: \.self){ item in
                                 Button{
                                     selectedTab = item.rawValue
@@ -85,7 +85,7 @@ extension ProfileView{
         VStack(){
             Spacer()
             Text(title)
-                .font(.custom("Roboto", size: 16))
+                .font(.custom("Roboto", size: 14))
                 .foregroundColor(isActive ? Color(red: 0.90, green: 0, blue: 0.13) : .gray)
             Rectangle().foregroundStyle(isActive ? Color(red: 0.90, green: 0, blue: 0.13) : .clear).frame(height: 6)
             

@@ -8,7 +8,7 @@ struct ContentView: View {
 
     var body: some View {
         TabView(selection: $selectedIndex){
-            ProfileView().tabItem {
+            BoardView().tabItem {
                 Label("", systemImage: "doc.richtext").foregroundStyle(.orange)
             }
                 VStack {

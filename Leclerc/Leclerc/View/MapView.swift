@@ -72,12 +72,12 @@ struct MapView: UIViewRepresentable {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(coordinate: .constant(CLLocationCoordinate2D(latitude: 25, longitude: -100)),
-                markers: .constant([CLLocationCoordinate2D(latitude: 25.651173, longitude: -100.287479),
-                                         CLLocationCoordinate2D(latitude: 25.649391, longitude: -100.289416),
-                                         CLLocationCoordinate2D(latitude: 25.650179, longitude: -100.292724),
-                                         CLLocationCoordinate2D(latitude: 25.653780, longitude: -100.289564),
-                                         CLLocationCoordinate2D(latitude: 25.648238, longitude: -100.285553),
+        MapView(coordinate: .constant(CLLocationCoordinate2D(latitude: 25, longitude: -100)), 
+                markers: .constant([CLLocationCoordinate2D(latitude: 25.651173, longitude: -100.287479), 
+                                         CLLocationCoordinate2D(latitude: 25.649391, longitude: -100.289416), 
+                                         CLLocationCoordinate2D(latitude: 25.650179, longitude: -100.292724), 
+                                         CLLocationCoordinate2D(latitude: 25.653780, longitude: -100.289564), 
+                                         CLLocationCoordinate2D(latitude: 25.648238, longitude: -100.285553), 
                                          CLLocationCoordinate2D(latitude: 25.654564, longitude: -100.293063)]))
     }
 }

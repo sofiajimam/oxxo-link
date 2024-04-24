@@ -32,6 +32,13 @@ struct ContentView: View {
             ProfileView().tabItem {
                 Label("", systemImage: "person.fill").foregroundStyle(.orange)
                 }
+            .alert(isPresented: $locationManager.locationPermissionDenied) {
+            Alert(
+                title: Text("Location Access Denied"),
+                message: Text("Please enable location services in Settings."),
+                dismissButton: .default(Text("OK"))
+            )
+        }
         }
         .tint(Color(red: 0.95, green: 0.60, blue: 0))
                 .onAppear(perform: {
@@ -83,17 +90,23 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     ]
     var userInOxxoRegionSince: [HashableCLLocationCoordinate2D: Date] = [:]
     var stayDurationCheckTimer: Timer?
+    @Published var locationPermissionDenied = false
 
     override init() {
         super.init()
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-        self.locationManager.startUpdatingLocation()
+        if CLLocationManager.locationServicesEnabled() {
+            self.locationManager.startUpdatingLocation()
+        }
     }
 
     func requestLocationPermission() {
         self.locationManager.requestAlwaysAuthorization()
         self.locationManager.requestWhenInUseAuthorization()
+        if CLLocationManager.locationServicesEnabled() {
+            self.locationManager.startUpdatingLocation()
+        }
     }
 
     func startMonitoringOxxoRegions() {
@@ -103,6 +116,20 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
             locationManager.requestState(for: region)
             print("Monitoring region at \(location.latitude), \(location.longitude)")
         }
+    }    
+
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        switch status {
+        case .restricted, .denied:
+            locationPermissionDenied = true
+        case .authorizedWhenInUse, .authorizedAlways:
+            if CLLocationManager.locationServicesEnabled() {
+                self.locationManager.startUpdatingLocation()
+            }
+        default:
+            break
+        }
+        self.authorizationStatus = status
     }
 
     func locationManager(_ manager: CLLocationManager, didDetermineState state: CLRegionState, for region: CLRegion) {
@@ -136,10 +163,6 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
             self.location = location.coordinate
             /* print("Location updated: \(location.coordinate.latitude), \(location.coordinate.longitude)") */
         }
-    }
-
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        self.authorizationStatus = status
     }
 
     func checkUserStayDuration(for location: CLLocationCoordinate2D) {

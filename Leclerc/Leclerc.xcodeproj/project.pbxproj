@@ -10,6 +10,18 @@
 		448C5FA92BD8B967002E02E2 /* LeclercApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448C5FA82BD8B967002E02E2 /* LeclercApp.swift */; };
 		448C5FAD2BD8B96A002E02E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448C5FAC2BD8B96A002E02E2 /* Assets.xcassets */; };
 		448C5FB02BD8B96A002E02E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448C5FAF2BD8B96A002E02E2 /* Preview Assets.xcassets */; };
+		44DF281B2BD9C61D0044CBB9 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF280A2BD9C61D0044CBB9 /* Board.swift */; };
+		44DF281C2BD9C61D0044CBB9 /* BoardElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF280B2BD9C61D0044CBB9 /* BoardElement.swift */; };
+		44DF281D2BD9C61D0044CBB9 /* ScreenPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF280C2BD9C61D0044CBB9 /* ScreenPosition.swift */; };
+		44DF281E2BD9C61D0044CBB9 /* Renderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF280D2BD9C61D0044CBB9 /* Renderable.swift */; };
+		44DF281F2BD9C61D0044CBB9 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF280E2BD9C61D0044CBB9 /* Transform.swift */; };
+		44DF28202BD9C61D0044CBB9 /* BoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF28102BD9C61D0044CBB9 /* BoardViewModel.swift */; };
+		44DF28212BD9C61D0044CBB9 /* FeedBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF28122BD9C61D0044CBB9 /* FeedBoardView.swift */; };
+		44DF28222BD9C61D0044CBB9 /* ElementButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF28132BD9C61D0044CBB9 /* ElementButton.swift */; };
+		44DF28232BD9C61D0044CBB9 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF28142BD9C61D0044CBB9 /* ImageView.swift */; };
+		44DF28242BD9C61D0044CBB9 /* StickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF28152BD9C61D0044CBB9 /* StickerView.swift */; };
+		44DF28252BD9C61D0044CBB9 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF28162BD9C61D0044CBB9 /* TextView.swift */; };
+		44DF28262BD9C61D0044CBB9 /* Caveat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44DF28192BD9C61D0044CBB9 /* Caveat-SemiBold.ttf */; };
 		5044FBDC2BD98E2E0070CEBD /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5044FBDB2BD98E2E0070CEBD /* OnboardingView.swift */; };
 		50BC9C4B2BD933FE00C54C1E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BC9C4A2BD933FE00C54C1E /* ProfileView.swift */; };
 		50BC9C4F2BD9393300C54C1E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BC9C4E2BD9393300C54C1E /* MapView.swift */; };
@@ -40,6 +52,18 @@
 		448C5FA82BD8B967002E02E2 /* LeclercApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeclercApp.swift; sourceTree = "<group>"; };
 		448C5FAC2BD8B96A002E02E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		448C5FAF2BD8B96A002E02E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		44DF280A2BD9C61D0044CBB9 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		44DF280B2BD9C61D0044CBB9 /* BoardElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardElement.swift; sourceTree = "<group>"; };
+		44DF280C2BD9C61D0044CBB9 /* ScreenPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenPosition.swift; sourceTree = "<group>"; };
+		44DF280D2BD9C61D0044CBB9 /* Renderable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderable.swift; sourceTree = "<group>"; };
+		44DF280E2BD9C61D0044CBB9 /* Transform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transform.swift; sourceTree = "<group>"; };
+		44DF28102BD9C61D0044CBB9 /* BoardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardViewModel.swift; sourceTree = "<group>"; };
+		44DF28122BD9C61D0044CBB9 /* FeedBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedBoardView.swift; sourceTree = "<group>"; };
+		44DF28132BD9C61D0044CBB9 /* ElementButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementButton.swift; sourceTree = "<group>"; };
+		44DF28142BD9C61D0044CBB9 /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		44DF28152BD9C61D0044CBB9 /* StickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerView.swift; sourceTree = "<group>"; };
+		44DF28162BD9C61D0044CBB9 /* TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		44DF28192BD9C61D0044CBB9 /* Caveat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Caveat-SemiBold.ttf"; sourceTree = "<group>"; };
 		5044FBDB2BD98E2E0070CEBD /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		50BC9C4A2BD933FE00C54C1E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		50BC9C4E2BD9393300C54C1E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -96,6 +120,8 @@
 		448C5FA72BD8B967002E02E2 /* Leclerc */ = {
 			isa = PBXGroup;
 			children = (
+				44DF28182BD9C61D0044CBB9 /* Board */,
+				44DF281A2BD9C61D0044CBB9 /* Fonts */,
 				50BC9C4C2BD935F600C54C1E /* View */,
 				83A9EDD92BD92AA100154034 /* ContentView.swift */,
 				448C5FA82BD8B967002E02E2 /* LeclercApp.swift */,
@@ -113,6 +139,56 @@
 				448C5FAF2BD8B96A002E02E2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		44DF280F2BD9C61D0044CBB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44DF280A2BD9C61D0044CBB9 /* Board.swift */,
+				44DF280B2BD9C61D0044CBB9 /* BoardElement.swift */,
+				44DF280C2BD9C61D0044CBB9 /* ScreenPosition.swift */,
+				44DF280D2BD9C61D0044CBB9 /* Renderable.swift */,
+				44DF280E2BD9C61D0044CBB9 /* Transform.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		44DF28112BD9C61D0044CBB9 /* VIew Model */ = {
+			isa = PBXGroup;
+			children = (
+				44DF28102BD9C61D0044CBB9 /* BoardViewModel.swift */,
+			);
+			path = "VIew Model";
+			sourceTree = "<group>";
+		};
+		44DF28172BD9C61D0044CBB9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				44DF28122BD9C61D0044CBB9 /* FeedBoardView.swift */,
+				44DF28132BD9C61D0044CBB9 /* ElementButton.swift */,
+				44DF28142BD9C61D0044CBB9 /* ImageView.swift */,
+				44DF28152BD9C61D0044CBB9 /* StickerView.swift */,
+				44DF28162BD9C61D0044CBB9 /* TextView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		44DF28182BD9C61D0044CBB9 /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				44DF280F2BD9C61D0044CBB9 /* Model */,
+				44DF28112BD9C61D0044CBB9 /* VIew Model */,
+				44DF28172BD9C61D0044CBB9 /* Views */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		44DF281A2BD9C61D0044CBB9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				44DF28192BD9C61D0044CBB9 /* Caveat-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		50BC9C4C2BD935F600C54C1E /* View */ = {
@@ -218,6 +294,7 @@
 				83ACBCA52BD9B6F5004CCAA0 /* GoogleService-Info.plist in Resources */,
 				448C5FAD2BD8B96A002E02E2 /* Assets.xcassets in Resources */,
 				83A9EDD42BD92A3D00154034 /* Contents.json in Resources */,
+				44DF28262BD9C61D0044CBB9 /* Caveat-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,21 +305,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44DF28232BD9C61D0044CBB9 /* ImageView.swift in Sources */,
 				83E0EA4C2BD9B9C400231E49 /* CircularMapView.swift in Sources */,
+				44DF28222BD9C61D0044CBB9 /* ElementButton.swift in Sources */,
+				44DF28252BD9C61D0044CBB9 /* TextView.swift in Sources */,
 				50BC9C552BD939C200C54C1E /* MissionView.swift in Sources */,
+				44DF281F2BD9C61D0044CBB9 /* Transform.swift in Sources */,
 				83ACBC922BD9B610004CCAA0 /* Feed.swift in Sources */,
+				44DF28242BD9C61D0044CBB9 /* StickerView.swift in Sources */,
 				83A9EDDA2BD92AA100154034 /* ContentView.swift in Sources */,
+				44DF281E2BD9C61D0044CBB9 /* Renderable.swift in Sources */,
 				50BC9C4F2BD9393300C54C1E /* MapView.swift in Sources */,
 				5044FBDC2BD98E2E0070CEBD /* OnboardingView.swift in Sources */,
 				83ACBC8F2BD9B610004CCAA0 /* Element.swift in Sources */,
 				83ACBC942BD9B621004CCAA0 /* User.swift in Sources */,
+				44DF281D2BD9C61D0044CBB9 /* ScreenPosition.swift in Sources */,
+				44DF28212BD9C61D0044CBB9 /* FeedBoardView.swift in Sources */,
 				50BC9C572BD939FD00C54C1E /* EventsView.swift in Sources */,
 				50BC9C512BD9395100C54C1E /* BoardView.swift in Sources */,
 				83ACBC912BD9B610004CCAA0 /* FirestoreManager.swift in Sources */,
+				44DF281C2BD9C61D0044CBB9 /* BoardElement.swift in Sources */,
 				50BC9C4B2BD933FE00C54C1E /* ProfileView.swift in Sources */,
 				50BC9C532BD939A300C54C1E /* BadgesView.swift in Sources */,
 				83ACBC902BD9B610004CCAA0 /* Activity.swift in Sources */,
+				44DF281B2BD9C61D0044CBB9 /* Board.swift in Sources */,
 				448C5FA92BD8B967002E02E2 /* LeclercApp.swift in Sources */,
+				44DF28202BD9C61D0044CBB9 /* BoardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,9 +464,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Leclerc/Preview Content\"";
-				DEVELOPMENT_TEAM = VBK39JCHGJ;
+				DEVELOPMENT_TEAM = Q7V5Q44LUS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Leclerc/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -389,7 +478,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sofiajima.Leclerc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omaredu.Leclerc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -405,9 +494,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Leclerc/Preview Content\"";
-				DEVELOPMENT_TEAM = VBK39JCHGJ;
+				DEVELOPMENT_TEAM = Q7V5Q44LUS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Leclerc/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -418,7 +508,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sofiajima.Leclerc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omaredu.Leclerc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

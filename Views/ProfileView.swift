@@ -45,9 +45,12 @@ struct ProfileView: View {
                     }.frame(width: 100, height: 100)
                     Spacer()
                 }
-                Spacer()
+                
             }
-            
+            VStack{
+                Rectangle().foregroundStyle(.clear)
+            }.background(Color(red: 0.97, green: 0.97, blue: 0.97)).frame(width: .infinity, height: .infinity)
+            Spacer()
         }
     }
 }

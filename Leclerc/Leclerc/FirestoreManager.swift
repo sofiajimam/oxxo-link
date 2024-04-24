@@ -123,8 +123,9 @@ class FirestoreManager {
         }
     }
 
+    // if it's already inside the array, then don't add it
     func addVisitedFeedToUser(userId: String, feed: Feed, completion: @escaping (Result<Void, Error>) -> Void) {
-        let feed = [
+        let feedDict = [
             "id": feed.id,
             "lat": feed.lat,
             "lng": feed.lng,
@@ -132,13 +133,31 @@ class FirestoreManager {
             "reactions": feed.reactions
         ] as [String : Any]
 
-        db.collection("users").document(userId).updateData([
-            "feeds.feeds_visites": FieldValue.arrayUnion([feed])
-        ]) { error in
-            if let error = error {
+        let userDocument = db.collection("users").document(userId)
+
+        userDocument.getDocument { (document, error) in
+            if let document = document, document.exists {
+                if let feedsVisited = document.get("feeds.feeds_visites") as? [[String: Any]] {
+                    if feedsVisited.contains(where: { $0["id"] as? String == feed.id }) {
+                        // Feed already exists in the array, so don't add it
+                        completion(.success(()))
+                        return
+                    }
+                }
+            } else if let error = error {
                 completion(.failure(error))
-            } else {
-                completion(.success(()))
+                return
+            }
+
+            // If we reach here, it means that the feed is not in the array, so we add it
+            userDocument.updateData([
+                "feeds.feeds_visites": FieldValue.arrayUnion([feedDict])
+            ]) { error in
+                if let error = error {
+                    completion(.failure(error))
+                } else {
+                    completion(.success(()))
+                }
             }
         }
     }
@@ -269,6 +288,7 @@ class FirestoreManager {
     func getVisitedFeedsOfUser(userID: String, completion: @escaping (Result<[Feed], Error>) -> Void) {
         db.collection("users").document(userID).getDocument { (document, error) in
             if let error = error {
+                print("Something went wrong: \(error)")
                 completion(.failure(error))
             } else if let document = document, document.exists {
                 let data = document.data()
@@ -288,13 +308,12 @@ class FirestoreManager {
                 }
                 completion(.success(userFeeds))
             } else {
+                print("Something went wrong: Document does not exist")
                 let error = NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey : "Document does not exist"])
                 completion(.failure(error))
             }
         }
     }
-
-
     // Function to delete a user
     func deleteUser(userID: String, completion: @escaping (Result<Void, Error>) -> Void) {
         db.collection("users").document(userID).delete { error in

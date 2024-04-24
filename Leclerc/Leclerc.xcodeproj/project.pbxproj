@@ -33,7 +33,18 @@
 		83ACBCA32BD9B652004CCAA0 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 83ACBCA22BD9B652004CCAA0 /* FirebaseStorageCombine-Community */; };
 		83ACBCA52BD9B6F5004CCAA0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83ACBCA42BD9B6F5004CCAA0 /* GoogleService-Info.plist */; };
 		83E0EA4C2BD9B9C400231E49 /* CircularMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0EA4B2BD9B9C400231E49 /* CircularMapView.swift */; };
+		83E0EA562BD9CAE300231E49 /* LeclercTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0EA552BD9CAE300231E49 /* LeclercTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83E0EA572BD9CAE300231E49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 448C5F9D2BD8B967002E02E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 448C5FA42BD8B967002E02E2;
+			remoteInfo = Leclerc;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		448C5FA52BD8B967002E02E2 /* Leclerc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leclerc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +68,8 @@
 		83ACBCA42BD9B6F5004CCAA0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Leclerc/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		83ACBCA62BD9B706004CCAA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Leclerc/Info.plist; sourceTree = SOURCE_ROOT; };
 		83E0EA4B2BD9B9C400231E49 /* CircularMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularMapView.swift; sourceTree = "<group>"; };
+		83E0EA532BD9CAE300231E49 /* LeclercTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeclercTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E0EA552BD9CAE300231E49 /* LeclercTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeclercTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +87,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83E0EA502BD9CAE300231E49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				448C5FA72BD8B967002E02E2 /* Leclerc */,
+				83E0EA542BD9CAE300231E49 /* LeclercTests */,
 				448C5FA62BD8B967002E02E2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				448C5FA52BD8B967002E02E2 /* Leclerc.app */,
+				83E0EA532BD9CAE300231E49 /* LeclercTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +166,14 @@
 			path = ProfileViews;
 			sourceTree = "<group>";
 		};
+		83E0EA542BD9CAE300231E49 /* LeclercTests */ = {
+			isa = PBXGroup;
+			children = (
+				83E0EA552BD9CAE300231E49 /* LeclercTests.swift */,
+			);
+			path = LeclercTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -173,6 +203,24 @@
 			productReference = 448C5FA52BD8B967002E02E2 /* Leclerc.app */;
 			productType = "com.apple.product-type.application";
 		};
+		83E0EA522BD9CAE300231E49 /* LeclercTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83E0EA592BD9CAE300231E49 /* Build configuration list for PBXNativeTarget "LeclercTests" */;
+			buildPhases = (
+				83E0EA4F2BD9CAE300231E49 /* Sources */,
+				83E0EA502BD9CAE300231E49 /* Frameworks */,
+				83E0EA512BD9CAE300231E49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83E0EA582BD9CAE300231E49 /* PBXTargetDependency */,
+			);
+			name = LeclercTests;
+			productName = LeclercTests;
+			productReference = 83E0EA532BD9CAE300231E49 /* LeclercTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -185,6 +233,10 @@
 				TargetAttributes = {
 					448C5FA42BD8B967002E02E2 = {
 						CreatedOnToolsVersion = 15.3;
+					};
+					83E0EA522BD9CAE300231E49 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 448C5FA42BD8B967002E02E2;
 					};
 				};
 			};
@@ -205,6 +257,7 @@
 			projectRoot = "";
 			targets = (
 				448C5FA42BD8B967002E02E2 /* Leclerc */,
+				83E0EA522BD9CAE300231E49 /* LeclercTests */,
 			);
 		};
 /* End PBXProject section */
@@ -218,6 +271,13 @@
 				83ACBCA52BD9B6F5004CCAA0 /* GoogleService-Info.plist in Resources */,
 				448C5FAD2BD8B96A002E02E2 /* Assets.xcassets in Resources */,
 				83A9EDD42BD92A3D00154034 /* Contents.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E0EA512BD9CAE300231E49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +306,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83E0EA4F2BD9CAE300231E49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E0EA562BD9CAE300231E49 /* LeclercTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83E0EA582BD9CAE300231E49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 448C5FA42BD8B967002E02E2 /* Leclerc */;
+			targetProxy = 83E0EA572BD9CAE300231E49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		448C5FB12BD8B96A002E02E2 /* Debug */ = {
@@ -428,6 +504,42 @@
 			};
 			name = Release;
 		};
+		83E0EA5A2BD9CAE300231E49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VBK39JCHGJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hackathon2024;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Leclerc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Leclerc";
+			};
+			name = Debug;
+		};
+		83E0EA5B2BD9CAE300231E49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VBK39JCHGJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hackathon2024;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Leclerc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Leclerc";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -445,6 +557,15 @@
 			buildConfigurations = (
 				448C5FB42BD8B96A002E02E2 /* Debug */,
 				448C5FB52BD8B96A002E02E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83E0EA592BD9CAE300231E49 /* Build configuration list for PBXNativeTarget "LeclercTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E0EA5A2BD9CAE300231E49 /* Debug */,
+				83E0EA5B2BD9CAE300231E49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

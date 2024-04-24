@@ -31,7 +31,7 @@ struct MapView: UIViewRepresentable {
                 let annotation = MKPointAnnotation()
                 annotation.coordinate = marker
                 uiView.addAnnotation(annotation)
-                print("Added marker at \(marker.latitude), \(marker.longitude)")
+                //print("Added marker at \(marker.latitude), \(marker.longitude)")
             }
         } else {
             print("Coordinate is nil")

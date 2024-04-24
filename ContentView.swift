@@ -151,7 +151,20 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     }
 
     func callFunction() {
-        // Your function here
-        print("WUWAAAAAAAAA")
+        // Create a Feed object
+        let feed = Feed(id: "newFeed", lat: 123, lng: 123, name: "New Feed", reactions: 0)
+
+        // Get an instance of FirestoreManager
+        let firestoreManager = FirestoreManager()
+
+        // Add the feed to Firestore
+        firestoreManager.createFeed(feed: feed) { result in
+            switch result {
+            case .success:
+                print("Feed successfully created")
+            case .failure(let error):
+                print("Failed to create feed: \(error)")
+            }
+        }
     }
 }

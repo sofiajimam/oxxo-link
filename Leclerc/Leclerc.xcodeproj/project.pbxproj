@@ -32,6 +32,7 @@
 		83ACBCA12BD9B652004CCAA0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 83ACBCA02BD9B652004CCAA0 /* FirebaseStorage */; };
 		83ACBCA32BD9B652004CCAA0 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 83ACBCA22BD9B652004CCAA0 /* FirebaseStorageCombine-Community */; };
 		83ACBCA52BD9B6F5004CCAA0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83ACBCA42BD9B6F5004CCAA0 /* GoogleService-Info.plist */; };
+		83E0EA4C2BD9B9C400231E49 /* CircularMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0EA4B2BD9B9C400231E49 /* CircularMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		83ACBC932BD9B621004CCAA0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Leclerc/User.swift; sourceTree = SOURCE_ROOT; };
 		83ACBCA42BD9B6F5004CCAA0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Leclerc/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		83ACBCA62BD9B706004CCAA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Leclerc/Info.plist; sourceTree = SOURCE_ROOT; };
+		83E0EA4B2BD9B9C400231E49 /* CircularMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				448C5FA82BD8B967002E02E2 /* LeclercApp.swift */,
 				448C5FAC2BD8B96A002E02E2 /* Assets.xcassets */,
 				448C5FAE2BD8B96A002E02E2 /* Preview Content */,
+				83E0EA4B2BD9B9C400231E49 /* CircularMapView.swift */,
 			);
 			path = Leclerc;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83E0EA4C2BD9B9C400231E49 /* CircularMapView.swift in Sources */,
 				50BC9C552BD939C200C54C1E /* MissionView.swift in Sources */,
 				83ACBC922BD9B610004CCAA0 /* Feed.swift in Sources */,
 				83A9EDDA2BD92AA100154034 /* ContentView.swift in Sources */,

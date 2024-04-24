@@ -12,5 +12,9 @@
     <string>always permissions</string>
     <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
     <string>Always and in use permissions</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Caveat-SemiBold.ttf</string>
+	</array>
 </dict>
 </plist>

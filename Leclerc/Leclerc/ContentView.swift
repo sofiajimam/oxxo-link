@@ -15,7 +15,7 @@ struct ContentView: View {
     
     var body: some View {
         TabView(selection: $selectedIndex){
-            ProfileView().tabItem {
+            FeedBoardView(model: sampleViewModel).tabItem {
                 Label("", systemImage: "doc.richtext").foregroundStyle(.orange)
                 }
             VStack {

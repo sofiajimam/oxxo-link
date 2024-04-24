@@ -32,7 +32,7 @@ class BoardViewModel: ObservableObject {
         }
     }
     
-    func renderElement(element: Element, renderable: AnyRenderable) -> AnyView {
+    func renderElement(element: BoardElement, renderable: AnyRenderable) -> AnyView {
         guard element.type == renderable.type else {
             return AnyView(EmptyView())
         }
@@ -111,7 +111,7 @@ class BoardViewModel: ObservableObject {
             )
     }
     
-    func handleElementPinch(element: Element, scale: CGFloat) {
+    func handleElementPinch(element: BoardElement, scale: CGFloat) {
         guard let index = board.elements.firstIndex(where: { $0.id == element.id }) else {
             return
         }
@@ -121,7 +121,7 @@ class BoardViewModel: ObservableObject {
         }
     }
     
-    func handleElementDrag(element: Element, position: CGPoint) {
+    func handleElementDrag(element: BoardElement, position: CGPoint) {
         guard let index = board.elements.firstIndex(where: { $0.id == element.id }) else {
             return
         }
@@ -133,7 +133,7 @@ class BoardViewModel: ObservableObject {
         }
     }
     
-    private func handleElementRotation(element: Element, angle: Angle) {
+    private func handleElementRotation(element: BoardElement, angle: Angle) {
         guard let index = board.elements.firstIndex(where: { $0.id == element.id }) else {
             return
         }
@@ -143,7 +143,7 @@ class BoardViewModel: ObservableObject {
     }
     
     public func addElement(type: String, content: Any) {
-        let element = Element(
+        let element = BoardElement(
             position: .init(x: 150, y: 150, z: greatestZ + 1),
             transform: .init(rotation: 0),
             content: content,

@@ -9,9 +9,9 @@ import Foundation
 
 struct Board: Identifiable {
     let id: UUID
-    var elements: [Element]
+    var elements: [BoardElement]
     
-    init(id: UUID = UUID(), elements: [Element]) {
+    init(id: UUID = UUID(), elements: [BoardElement]) {
         self.id = id
         self.elements = elements
     }

@@ -2,7 +2,7 @@
 //  LeclercApp.swift
 //  Leclerc
 //
-//  Created by Omar Sánchez on 23/04/24.
+//  Created by Pablo Salas on 23/04/24.
 //
 
 import SwiftUI

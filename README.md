@@ -1,6 +1,6 @@
 # OXXO HI 👋
 
-![App Screenshot](../Repo-Reto1-Equipo05/ImagesReadme/Image1.jpeg)
+![App Screenshot](ImagesReadme/Image1.jpeg)
 
 Un proyecto desarrollado para dar solución a una encruzijada por parte de FEMSA, donde detectetaron una oportunidad por medio de la marca OXXO, dónde varias de las sucursales que tiene se descubrió que muchas de las comunidades las aprovechaban para publicitar desde oportunidades de empleo, hasta actividades comunitarias, como la búsqueda de una mascota perdida.
 
